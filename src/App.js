@@ -1,11 +1,19 @@
+import { Box, ThemeProvider, withStyles } from '@material-ui/core';
+import React from 'react'
+import { theme } from './materialUI/theme';
+import { LoginPage } from './pages/LoginPage/LoginPage'
+import { styles } from './styles'
 
 
-function App() {
+function App({ classes }) {
   return (
-    <div className="App">
+    <ThemeProvider theme={theme}>
+      <Box className={classes.container}>
+        <LoginPage />
+      </Box>
+    </ThemeProvider>
 
-    </div>
   );
 }
 
-export default App;
+export default withStyles(styles)(App)

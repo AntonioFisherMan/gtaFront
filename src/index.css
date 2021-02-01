@@ -1,0 +1,7 @@
+/*******INPUTS STYLE OVVERIDE****/
+.MuiInput-underline:before{
+        border-bottom:1.5px solid rgba(255, 255, 255, 0.5) !important;
+}
+.MuiButton-root{
+        padding:0 !important;
+}
