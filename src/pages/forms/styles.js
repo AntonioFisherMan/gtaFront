@@ -9,9 +9,10 @@ export const styles = () => createStyles({
                 width: 350,
         },
         headline: {
-                marginBottom: 30
+                marginBottom: 20
         },
         form: {
+
                 width: '100%'
         },
         inputs: {
@@ -31,6 +32,16 @@ export const styles = () => createStyles({
                 display: 'flex',
                 justifyContent: 'space-between',
                 marginTop: 4
+        },
+        buttonsBlockMargin: {
+                marginTop: 20
+        },
+        buttonsBlockRight: {
+                justifyContent: 'flex-end'
+        },
+        right: {
+                display: 'flex',
+                justifyContent: 'flex-end'
         }
 
 })

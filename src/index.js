@@ -1,12 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { AppDataHOC } from './hoc/AppDataHOC';
 import './index.css';
-import App from './App';
-
+import { LoginPage } from './pages/forms/LoginPage/LoginPage';
+import { RegisterPage } from './pages/forms/RegisterPage/RegisterPage';
+import { RecoverPassPage } from './pages/forms/RecoverPassPage/RecoverPassPage';
+const ComponentWithStyles = AppDataHOC(RecoverPassPage)
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <ComponentWithStyles />
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById('login')
 );
+

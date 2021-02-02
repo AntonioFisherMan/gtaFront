@@ -1,12 +1,12 @@
 import React from 'react'
 import { Box, withStyles } from '@material-ui/core'
-import { Headline } from '../../common/typography/Headline/Headline'
-import { styles } from './styles'
-import { FormButton } from '../../components/Buttons/FormButton'
-import { LinkButton } from '../../components/Buttons/LinkButton'
+import { Headline } from '../../../common/typography/Headline/Headline'
+import { styles } from '../styles'
+import { FormButton } from '../../../components/Buttons/FormButton'
+import { LinkButton } from '../../../components/Buttons/LinkButton'
 
-import { MyInput } from '../../components/Inputs/MyInput/MyInput'
-import { AccountIcon, PasswordIcon } from '../../assets/icons/icons'
+import { MyInput } from '../../../components/Inputs/MyInput/MyInput'
+import { AccountIcon, PasswordIcon } from '../../../assets/icons/icons'
 
 
 
@@ -18,7 +18,6 @@ export const LoginPage = withStyles(styles)(({ classes }) => {
                         <Box className={classes.form}>
                                 <Box className={classes.inputs}>
                                         <MyInput label="Логин или Email" propsClasses={classes.input} icon={<AccountIcon />} />
-
                                         <MyInput label="Пароль" icon={<PasswordIcon />} />
                                 </Box>
                                 <LinkButton text="Забыли пароль?" variant="text" propsClasses={classes.forgotBtn} />
