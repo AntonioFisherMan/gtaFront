@@ -51,3 +51,63 @@ export const ChatIcon = () => {
 
         )
 }
+export const RightArrowIcon = ({ color }) => {
+        return (
+                <svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.6 8.075V6.125L4.5 4.325L0.6 2.525V0.574999L7.05 3.65V5L0.6 8.075Z" fill="white" />
+                </svg>
+
+        )
+}
+export const LeftArrowIcon = ({ color }) => {
+        return (
+
+                <svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.6 5V3.65L7.05 0.574999V2.525L3.15 4.325L7.05 6.125V8.075L0.6 5Z" fill="white" />
+                </svg>
+
+        )
+}
+
+
+
+export const RandomIcon = ({ color }) => {
+        return (
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 15H10.875L12.4117 13.4625L10.065 11.115L11.1225 10.0575L13.47 12.4043L15 10.875V15ZM4.0575 15L3 13.9425L12.405 4.53L10.875 3H15V7.125L13.47 5.595L4.05825 15H4.0575ZM6.8775 7.935L3 4.0575L4.0575 3L7.9425 6.8775L6.8775 7.93425V7.935Z" fill="white" fill-opacity="0.7" />
+                </svg>
+
+        )
+}
+
+export const CheckboxIcon = ({ color }) => {
+        return (
+                <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="18" height="18" fill="#FECA30" fill-opacity="0.3" />
+                        <rect x="0.25" y="0.25" width="17.5" height="15.5" stroke="#C4C4C4" stroke-opacity="0.3" stroke-width="0.5" />
+                </svg>
+
+
+        )
+}
+
+export const CheckboxIcon2 = ({ color }) => {
+        return (
+                <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="18" height="18" fill="#C4C4C4" fill-opacity="0.3" />
+                        <rect x="0.25" y="0.25" width="17.5" height="15.5" stroke="#C4C4C4" stroke-opacity="0.3" stroke-width="0.5" />
+                </svg>
+
+
+        )
+}
+export const SliderIcon = () => {
+        return (
+                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="10" height="10" fill="white" />
+                </svg>
+
+        )
+}
+
+

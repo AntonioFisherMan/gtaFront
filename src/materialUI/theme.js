@@ -24,10 +24,9 @@ export const theme = createMuiTheme({
                         contrastText: '#000',
                 },
                 // secondary: {
-                //         light: '#ff7961',
-                //         main: '#f44336',
-                //         dark: '#ba000d',
-                //         contrastText: '#e77e83',
+
+                //         main: 
+
                 // },
                 // grey: {
                 //         A700: '#979797',
@@ -40,6 +39,26 @@ export const theme = createMuiTheme({
                         fontSize: '30px',
                         color: '#FFFFFF'
                 },
+                h5: {
+                        fontWeight: "500",
+                        fontSize: '25px',
+                        color: '#FFFFFF'
+                },
+                subtitle1: {
+                        fontWeight: "400",
+                        fontSize: 15,
+                        color: '#FFFFFF'
+                },
+                subtitle2: {
+                        fontSize: 10,
+                        color: 'rgba(255, 255, 255, 0.6)'
+
+                },
+                body1: {
+                        fontWeight: "500",
+                        fontSize: 13,
+                        color: '#FFFFFF'
+                }
         },
         overrides: {
 

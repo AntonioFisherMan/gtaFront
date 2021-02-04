@@ -6,7 +6,6 @@ export const styles = () => createStyles({
                 height: 21,
                 background: '#FECA30',
                 borderRadius: 5,
-                fontSize: 13,
                 color: '#000000',
                 fontWeight: 700,
                 textTransform: 'unset'
@@ -15,7 +14,6 @@ export const styles = () => createStyles({
         {
                 textTransform: 'unset',
                 color: '#FFFFFF',
-                fontSize: 13,
                 fontWeight: 400
         }
 

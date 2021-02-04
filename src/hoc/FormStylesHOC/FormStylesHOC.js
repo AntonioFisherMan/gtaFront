@@ -1,10 +1,10 @@
 
 import { Box, ThemeProvider, withStyles } from '@material-ui/core';
 import React from 'react'
-import { theme } from '../materialUI/theme';
-import { styles } from '../styles'
+import { theme } from '../../materialUI/theme';
+import { styles } from './styles'
 
-export const AppDataHOC = (Component) => {
+export const FormStylesHOC = (Component) => {
         const ComponentWithData = withStyles(styles)(({ classes }) => {
                 return (
                         <ThemeProvider theme={theme}>
