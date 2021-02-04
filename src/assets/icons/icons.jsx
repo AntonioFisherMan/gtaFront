@@ -1,3 +1,4 @@
+import { IconButton, SvgIcon } from '@material-ui/core'
 import React from 'react'
 
 
@@ -51,20 +52,23 @@ export const ChatIcon = () => {
 
         )
 }
-export const RightArrowIcon = ({ color }) => {
+
+
+export const RightArrowIcon = (props) => {
         return (
-                <svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0.6 8.075V6.125L4.5 4.325L0.6 2.525V0.574999L7.05 3.65V5L0.6 8.075Z" fill="white" />
-                </svg>
+
+                <SvgIcon {...props} viewBox={'0 0 8 9'} >
+                        <path d="M0.6 8.075V6.125L4.5 4.325L0.6 2.525V0.574999L7.05 3.65V5L0.6 8.075Z" />
+                </SvgIcon >
 
         )
 }
-export const LeftArrowIcon = ({ color }) => {
+export const LeftArrowIcon = (props) => {
         return (
 
-                <svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0.6 5V3.65L7.05 0.574999V2.525L3.15 4.325L7.05 6.125V8.075L0.6 5Z" fill="white" />
-                </svg>
+                <SvgIcon {...props} viewBox={'0 0 8 9'} >
+                        <path d="M0.6 5V3.65L7.05 0.574999V2.525L3.15 4.325L7.05 6.125V8.075L0.6 5Z" />
+                </SvgIcon >
 
         )
 }

@@ -3,6 +3,11 @@ body{
         margin:0;
         padding:0;
 }
+h6{
+        margin-block-start:0;
+        margin-block-end:0;
+        padding:0;
+}
 .MuiInput-underline:before{
         border-bottom:1.5px solid rgba(255, 255, 255, 0.5) !important;
 }

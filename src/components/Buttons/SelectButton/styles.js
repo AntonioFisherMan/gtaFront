@@ -1,6 +1,11 @@
 import { createStyles } from "@material-ui/core";
 
 export const styles = () => createStyles({
+        container: {
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center'
+        },
         btn: {
                 width: 169,
                 height: 55,

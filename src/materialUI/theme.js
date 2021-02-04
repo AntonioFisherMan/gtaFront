@@ -47,7 +47,10 @@ export const theme = createMuiTheme({
                 subtitle1: {
                         fontWeight: "400",
                         fontSize: 15,
-                        color: '#FFFFFF'
+                        color: '#FFFFFF',
+                        lineHeight: 0,
+                        alignItems: 'center',
+                        display: 'flex'
                 },
                 subtitle2: {
                         fontSize: 10,
