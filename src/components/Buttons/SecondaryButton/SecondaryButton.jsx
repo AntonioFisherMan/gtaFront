@@ -3,9 +3,9 @@ import React from 'react'
 import { styles } from './styles'
 
 
-export const SecondaryButton = withStyles(styles)(({ classes, text }) => {
+export const SecondaryButton = withStyles(styles)(({ classes, text, onClick }) => {
         return (
-                <Button className={classes.btn}>
+                <Button className={classes.btn} onClick={onClick}>
                         {text}
                 </Button>
         )

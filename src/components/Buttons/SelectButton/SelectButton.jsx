@@ -4,13 +4,13 @@ import { styles } from './styles'
 import { Subtitle } from '../../../common/typography/Subtitle/Subtitle'
 import { RightArrowIcon } from '../../../assets/icons/icons'
 import { LeftArrowIcon } from '../../../assets/icons/icons'
+import classNames from 'classnames'
 
-
-export const SelectButton = withStyles(styles)(({ classes, data }) => {
+export const SelectButton = withStyles(styles)(({ classes, data, isBackground, propsClasses }) => {
         const [index, setIndex] = useState(0)
 
         const isDisabledLeft = index === 0 ? true : false;
-        const isDisabledRight = data.length - 1 <= index ? true : false
+        const isDisabledRight = data && data.length - 1 <= index ? true : false
         const decreaseIndex = () => {
                 setIndex(prev => prev - 1)
         }
@@ -19,14 +19,14 @@ export const SelectButton = withStyles(styles)(({ classes, data }) => {
         }
 
         return (
-                <Box className={classes.container}>
+                <Box className={isBackground ? classNames(classes.container, classes.btn, propsClasses) : classes.container}>
                         <IconButton onClick={() => decreaseIndex()} disabled={isDisabledLeft} >
                                 <LeftArrowIcon style={{ color: isDisabledLeft ? "rgba(255, 255, 255, 0.5)" : "rgba(255, 255, 255, 0.8)", fontSize: "10px" }} />
                         </IconButton>
-                        {data.map((item, id) => {
+                        { data && data.map((item, id) => {
                                 return (
                                         <>
-                                                {id === index ? <Subtitle text={item.text} /> : null}
+                                                { id === index ? <Subtitle text={item.text} /> : null}
 
                                         </>
 

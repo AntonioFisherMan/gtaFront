@@ -9,10 +9,9 @@ export const styles = () => createStyles({
         container: {
 
                 background: 'rgba(29, 32, 40, 0.75)',
-                paddingRight: 33,
                 paddingLeft: 33,
-                paddingTop: 11,
-                paddingBottom: 11,
+                paddingTop: 5,
+                paddingBottom: 1,
                 marginBottom: 207
         },
         item: {
@@ -20,7 +19,9 @@ export const styles = () => createStyles({
                 justifyContent: 'space-between',
                 marginBottom: 5
         },
-
+        itemBtn: {
+                width: '50%'
+        },
         text: {
                 fontWeight: 200
         },

@@ -20,6 +20,7 @@ export const InformPage = withStyles(styles)(({ classes }) => {
 
 
         const handleClickItem = (e, index) => {
+                debugger
                 setSelectedIndex(prevState => prevState === index ? '' : index)
                 if (selectedIndex === index) {
                         setExpanded(!expanded)
@@ -39,16 +40,16 @@ export const InformPage = withStyles(styles)(({ classes }) => {
                                 <Box className={classes.collapseBlock}>
                                         {list.map((item, index) => {
                                                 return (
-                                                        <ListItem key={item.id} selected={selectedIndex === index} disableGutters={true} button onClick={(e) => handleClickItem(e, index)} classes={{ root: classes.listItem }}>
+                                                        <ListItem key={item.id} selected={selectedIndex === index} disableGutters={true} button onClick={(e) => handleClickItem(e, index)} classes={{ root: classes.listItem, selected: classes.listItemSelected }}>
                                                                 <ListItemText primary={item.text} classes={{ root: classNames(classes.listText, selectedIndex === index ? classes.black : classes.white) }} />
-                                                                <RightArrowIcon color={selectedIndex === index ? "black" : "white"} />
+                                                                <RightArrowIcon style={{ color: selectedIndex === index ? "black" : "white", fontSize: '10px' }} />
                                                         </ListItem>
                                                 )
                                         })}
                                 </Box>
                         </Box>
                         <Collapse in={expanded} className={classes.settingsBlock}>
-                                {choosePanel(selectedIndex)}
+                                {choosePanel(selectedIndex, handleClickItem)}
                         </Collapse>
                 </>
 

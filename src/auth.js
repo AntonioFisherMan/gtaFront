@@ -9,12 +9,12 @@ import { InformPage } from './pages/InformPage/InformPage';
 import { InformUserStylesHOC } from './hoc/InformUserStylesHOC/InformUserStylesHOC';
 
 
-const ComponentWithStyles = InformUserStylesHOC(InformPage)
+const ComponentWithStyles = FormStylesHOC(LoginPage)
 
 ReactDOM.render(
-  <React.StrictMode>
-    <ComponentWithStyles />
-  </React.StrictMode>,
-  document.getElementById('root')
+        <React.StrictMode>
+                <ComponentWithStyles />
+        </React.StrictMode>,
+        document.getElementById('root')
 );
 

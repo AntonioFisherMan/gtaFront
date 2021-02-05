@@ -48,7 +48,6 @@ export const theme = createMuiTheme({
                         fontWeight: "400",
                         fontSize: 15,
                         color: '#FFFFFF',
-                        lineHeight: 0,
                         alignItems: 'center',
                         display: 'flex'
                 },

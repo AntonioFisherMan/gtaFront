@@ -1,9 +1,22 @@
 import { createStyles } from "@material-ui/core";
 
 export const styles = () => createStyles({
-        flex: {
-                display: 'flex'
+        center: {
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center'
         },
+        btn: {
+                marginTop: 25,
+                marginBottom: 25,
+                width: 169,
+                height: 55
+        },
+        flex: {
+                display: 'flex',
+                justifyContent: 'space-between'
+        },
+
         headline: {
                 marginTop: 89,
                 marginBottom: 52
@@ -34,10 +47,16 @@ export const styles = () => createStyles({
                 marginLeft: 10
         },
         slider: {
-                borderRadius: 0
+                borderRadius: 0,
+                padding: '0 !important'
         },
         sliderBlock: {
                 width: '100%'
+        },
+        sliderText: {
+                display: 'flex',
+                justifyContent: 'center',
+                marginBottom: 10
         },
         sliderTextBlock: {
                 display: "flex",
@@ -49,25 +68,11 @@ export const styles = () => createStyles({
                 alignItems: 'center',
                 justifyContent: 'center',
         },
-        endBlock: {
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                marginTop: 16,
 
-        },
-        endBlockBtn: {
-                width: 95,
-                marginRight: 22,
-                textTransform: 'uppercase'
-        },
         iconBlockBtn: {
                 fontSize: 15,
-                fontWeight: 300
+                fontWeight: 300,
         },
-        endBtnSize: {
-                fontSize: 19,
-                fontWeight: 300
-        }
+
 
 })

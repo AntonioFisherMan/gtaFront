@@ -3,11 +3,12 @@ import { createStyles } from "@material-ui/core";
 
 export const styles = () => createStyles({
         settingsBlock: {
-                width: '20%',
+                width: '350px',
                 height: '1080px',
                 background: 'rgba(29, 32, 40, 0.75)',
                 paddingLeft: 54,
-                paddingRight: 54
+                paddingRight: 54,
+                position: 'relative'
         },
         paragraph: {
                 marginTop: 247,
@@ -27,15 +28,18 @@ export const styles = () => createStyles({
                 marginBottom: 14,
                 padding: '12px 36px'
         },
+        listItemSelected: {
+                background: 'rgba(255, 255, 255, 0.75) !important'
+        },
         listText: {
                 fontSize: 15,
                 fontWeight: 400,
-                color: '#FFFFFF'
+
         },
         white: {
                 color: "white",
         },
         black: {
-                color: "black",
+                color: "black !important",
         }
 })
