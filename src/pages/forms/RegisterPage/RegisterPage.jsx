@@ -16,8 +16,8 @@ export const RegisterPage = withStyles(styles)(({ classes }) => {
                                 <Box className={classes.inputs}>
                                         <MyInput text="Логин" icon={<AccountIcon />} propsClasses={classes.input} />
                                         <MyInput text="Email" icon={<EmailIcon />} propsClasses={classes.input} />
-                                        <MyInput text="Пароль" icon={<PasswordIcon />} propsClasses={classes.input} />
-                                        <MyInput text="Повторите пароль" icon={<AccountIcon />} propsClasses={classes.input} />
+                                        <MyInput text="Пароль" isPass={true} icon={<PasswordIcon />} propsClasses={classes.input} />
+                                        <MyInput text="Повторите пароль" isPass={true} icon={<PasswordIcon />} propsClasses={classes.input} />
                                         <MyInput text="Реферальный код" icon={<CodeIcon />} />
                                 </Box>
                                 <Box className={classNames(classes.buttonsBlock, classes.buttonsBlockMargin)}>

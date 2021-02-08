@@ -18,7 +18,7 @@ export const LoginPage = withStyles(styles)(({ classes }) => {
                         <Box className={classes.form}>
                                 <Box className={classes.inputs}>
                                         <MyInput text="Логин или Email" propsClasses={classes.input} icon={<AccountIcon />} />
-                                        <MyInput text="Пароль" icon={<PasswordIcon />} />
+                                        <MyInput text="Пароль" isPass={true} icon={<PasswordIcon />} />
                                 </Box>
                                 <LinkButton text="Забыли пароль?" variant="text" propsClasses={classes.forgotBtn} />
                                 <Box className={classes.buttonsBlock}>
