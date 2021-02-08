@@ -69,3 +69,15 @@ export const clothes = [
         { text: "Нижняя одежда", clothesArr },
         { text: "Обувь", clothesArr }
 ]
+
+export const informItems = [
+        { id: 0, text: "ИНФОРМАЦИЯ" },
+        { id: 1, text: "ХАРАКТЕРИСТИКИ" },
+        { id: 2, text: "ВНЕШНИЙ ВИД" },
+        { id: 3, text: "ОДЕЖДА" }
+]
+export const bankItems = [
+        { id: 0, text: "УПРАВЛЕНИЕ СЧЕТОМ" },
+        { id: 1, text: "ОПЛАТА ИМУЩЕСТВА" },
+        { id: 2, text: "ПЕРЕВЕСТИ НА СЧЕТ " }
+]

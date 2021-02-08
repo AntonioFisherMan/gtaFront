@@ -12,6 +12,7 @@ export const styles = () => createStyles({
                 paddingLeft: 33,
                 paddingTop: 5,
                 paddingBottom: 1,
+                paddingRight: 11,
                 marginBottom: 207
         },
         item: {
@@ -20,7 +21,7 @@ export const styles = () => createStyles({
                 marginBottom: 5
         },
         itemBtn: {
-                width: '50%'
+                width: '40%'
         },
         text: {
                 fontWeight: 200

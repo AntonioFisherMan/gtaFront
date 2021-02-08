@@ -6,11 +6,11 @@ import { Subtitle2 } from '../../../common/typography/Subtitle2/Subtitle2'
 import { styles } from './styles'
 import classNames from 'classnames'
 import { SelectButton } from '../../Buttons/SelectButton/SelectButton'
-import { RandomIcon, CheckboxIcon, CheckboxIcon2 } from '../../../assets/icons/icons'
+import { RandomIcon, CheckboxIcon, CheckboxIcon2, SelectedCheckboxIcon } from '../../../assets/icons/icons'
 import { LinkButton } from '../../Buttons/LinkButton'
 import { ages, names, nations } from '../../../data/index'
 import { EscapeBlock } from '../EscapeBlock/EscapeBlock'
-
+import CheckBoxIcon from '@material-ui/icons/CheckBox';
 
 export const InformPanel = withStyles(styles)(({ classes, closePanel, index }) => {
         let [checked, setChecked] = useState({ man: false, women: false })
@@ -30,6 +30,7 @@ export const InformPanel = withStyles(styles)(({ classes, closePanel, index }) =
                                                 control={
                                                         <Checkbox
                                                                 icon={<CheckboxIcon />}
+
                                                                 classes={{ root: classes.checkbox }}
                                                                 checked={checked.men}
                                                                 onChange={handleCheck}
@@ -45,6 +46,7 @@ export const InformPanel = withStyles(styles)(({ classes, closePanel, index }) =
                                                 control={
                                                         <Checkbox
                                                                 icon={<CheckboxIcon2 />}
+
                                                                 classes={{ root: classes.checkbox }}
                                                                 checked={checked.women}
                                                                 onChange={handleCheck}

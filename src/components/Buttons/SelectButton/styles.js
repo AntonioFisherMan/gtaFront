@@ -9,6 +9,8 @@ export const styles = () => createStyles({
         btn: {
                 background: 'rgba(29, 32, 40, 0.75)',
                 textTransform: 'capitalize',
+                paddingRight: 12,
+                paddingLeft: 12
         },
         center: {
                 display: 'flex',

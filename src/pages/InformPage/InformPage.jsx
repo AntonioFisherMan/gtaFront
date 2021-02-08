@@ -1,32 +1,20 @@
-import { Box, withStyles, ListItem, ListItemText, Collapse, ListItemSecondaryAction, IconButton } from '@material-ui/core'
+import { Box, withStyles, Collapse } from '@material-ui/core'
 import React, { useState } from 'react'
 import { Paragraph } from '../../common/typography/Paragraph/Paragraph'
 import { MyInput } from '../../components/Inputs/MyInput/MyInput'
 import { styles } from './styles'
-import { RightArrowIcon } from '../../assets/icons/icons'
-import classNames from 'classnames'
+import { informItems } from '../../data/index'
 import { choosePanel } from '../../utils/choosePanel'
+import { CollapseItems } from '../../components/CollapseItems/CollapseItems'
+import { selectCollapseIndex } from '../../utils/selectCollapseIndex'
 
-
-const list = [
-        { id: 0, text: "ИНФОРМАЦИЯ" },
-        { id: 1, text: "ХАРАКТЕРИСТИКИ" },
-        { id: 2, text: "ВНЕШНИЙ ВИД" },
-        { id: 3, text: "ОДЕЖДА" }
-]
 export const InformPage = withStyles(styles)(({ classes }) => {
         const [expanded, setExpanded] = useState(false)
         const [selectedIndex, setSelectedIndex] = useState();
 
 
         const handleClickItem = (e, index) => {
-                debugger
-                setSelectedIndex(prevState => prevState === index ? '' : index)
-                if (selectedIndex === index) {
-                        setExpanded(!expanded)
-                } else {
-                        setExpanded(true)
-                }
+                selectCollapseIndex(e, index, selectedIndex, expanded, setExpanded, setSelectedIndex)
         }
 
         return (
@@ -37,16 +25,7 @@ export const InformPage = withStyles(styles)(({ classes }) => {
                                         <MyInput text="Имя" propsClasses={classes.input} />
                                         <MyInput text="Фамилия" />
                                 </Box>
-                                <Box className={classes.collapseBlock}>
-                                        {list.map((item, index) => {
-                                                return (
-                                                        <ListItem key={item.id} selected={selectedIndex === index} disableGutters={true} button onClick={(e) => handleClickItem(e, index)} classes={{ root: classes.listItem, selected: classes.listItemSelected }}>
-                                                                <ListItemText primary={item.text} classes={{ root: classNames(classes.listText, selectedIndex === index ? classes.black : classes.white) }} />
-                                                                <RightArrowIcon style={{ color: selectedIndex === index ? "black" : "white", fontSize: '10px' }} />
-                                                        </ListItem>
-                                                )
-                                        })}
-                                </Box>
+                                <CollapseItems data={informItems} selectedIndex={selectedIndex} handleClickItem={handleClickItem} />
                         </Box>
                         <Collapse in={expanded} className={classes.settingsBlock}>
                                 {choosePanel(selectedIndex, handleClickItem)}

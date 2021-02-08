@@ -29,6 +29,8 @@ export const styles = () => createStyles({
         },
         checkbox: {
                 padding: 0,
+                width: 18,
+                height: 16,
                 marginRight: 5,
                 color: 'rgba(254, 202, 48, 0.3)',
         },

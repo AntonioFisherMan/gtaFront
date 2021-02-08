@@ -10,7 +10,6 @@ export const InformUserStylesHOC = (Component) => {
                 return (
                         <ThemeProvider theme={theme}>
                                 <Box className={classes.container}>
-
                                         <Component />
                                 </Box>
                         </ThemeProvider>

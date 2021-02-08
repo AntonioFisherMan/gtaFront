@@ -6,14 +6,14 @@ import { LoginPage } from '../pages/forms/LoginPage/LoginPage';
 import { RegisterPage } from '../pages/forms/RegisterPage/RegisterPage';
 import { RecoverPassPage } from '../pages/forms/RecoverPassPage/RecoverPassPage';
 import { FormStylesHOC } from '../hoc/FormStylesHOC/FormStylesHOC'
-
+import { BankPage } from '../pages/BankPage/BanpPage'
 
 
 const InformWithStyles = InformUserStylesHOC(InformPage)
 const LoginWithStyles = FormStylesHOC(LoginPage)
 const RegisterWithStyles = FormStylesHOC(RegisterPage)
 const RecoverWithStyles = FormStylesHOC(RecoverPassPage)
-//const InformWithStyles = FormStylesHOC(InformPage)
+const BankWithStyles = InformUserStylesHOC(BankPage)
 
 
 
@@ -31,7 +31,7 @@ export const AppBarMenu = () => {
                                         <Tab label="Login" />
                                         <Tab label="Register" />
                                         <Tab label="Recover Pass" />
-
+                                        <Tab label="Bank Page" />
                                 </Tabs>
                         </AppBar>
                         <TabPanel value={value} index={0} >
@@ -45,6 +45,9 @@ export const AppBarMenu = () => {
                         </TabPanel>
                         <TabPanel value={value} index={3}>
                                 <RecoverWithStyles />
+                        </TabPanel>
+                        <TabPanel value={value} index={4}>
+                                <BankWithStyles />
                         </TabPanel>
 
                 </>
