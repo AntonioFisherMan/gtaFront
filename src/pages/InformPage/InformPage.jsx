@@ -1,13 +1,14 @@
 import React, { useState } from 'react'
-import { Box, withStyles, Collapse } from '@material-ui/core'
+import { Box, withStyles, Collapse, Fade, Paper } from '@material-ui/core'
 import { Paragraph } from '../../common/typography/Paragraph/Paragraph'
 import { MyInput } from '../../components/Inputs/MyInput/MyInput'
 import { styles } from './styles'
 import { informItems } from '../../data/index'
-
 import { CollapseItems } from '../../components/CollapseItems/CollapseItems'
 import { selectCollapseIndex } from '../../utils/selectCollapseIndex'
 import { choosePanel } from '../../utils/choosePanel'
+import { SecondaryButton } from '../../components/Buttons/SecondaryButton/SecondaryButton'
+
 
 
 export const InformPage = withStyles(styles)(({ classes }) => {
@@ -29,9 +30,17 @@ export const InformPage = withStyles(styles)(({ classes }) => {
                                 </Box>
                                 <CollapseItems data={informItems} selectedIndex={selectedIndex} handleClickItem={handleClickItem} />
                         </Box>
-                        <Collapse in={expanded} className={classes.settingsBlock}>
-                                {choosePanel(selectedIndex, handleClickItem)}
-                        </Collapse>
+                        <Fade in={expanded} className={classes.btnBlock}>
+                                <Paper>
+                                        <SecondaryButton text="СОЗДАТЬ ПЕРСОНАЖА" propsClasses={classes.btn} />
+                                </Paper>
+                        </Fade>
+                        <Fade in={expanded} className={classes.settingsBlock}>
+                                <Paper>
+                                        {choosePanel(selectedIndex, handleClickItem)}
+                                </Paper>
+                        </Fade>
+
                 </>
 
         )

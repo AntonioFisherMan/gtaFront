@@ -7,13 +7,14 @@ import { RegisterPage } from '../pages/forms/RegisterPage/RegisterPage';
 import { RecoverPassPage } from '../pages/forms/RecoverPassPage/RecoverPassPage';
 import { FormStylesHOC } from '../hoc/FormStylesHOC/FormStylesHOC'
 import { BankPage } from '../pages/BankPage/BanpPage'
+import { ThemeProviderHOC } from '../hoc/InformUserStylesHOC/ThemeProviderHOC';
 
 
 const InformWithStyles = InformUserStylesHOC(InformPage)
 const LoginWithStyles = FormStylesHOC(LoginPage)
 const RegisterWithStyles = FormStylesHOC(RegisterPage)
 const RecoverWithStyles = FormStylesHOC(RecoverPassPage)
-
+const BankPageWithStyles = ThemeProviderHOC(BankPage)
 
 
 
@@ -47,7 +48,7 @@ export const AppBarMenu = () => {
                                 <RecoverWithStyles />
                         </TabPanel>
                         <TabPanel value={value} index={4}>
-                                <BankPage />
+                                <BankPageWithStyles />
                         </TabPanel>
 
                 </>

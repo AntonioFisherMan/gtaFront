@@ -11,6 +11,12 @@ export const styles = () => createStyles({
                 paddingRight: 54,
                 position: 'relative'
         },
+        btnBlock: {
+                display: 'flex',
+                alignItems: 'flex-end',
+                marginBottom: 76,
+                boxShadow: 'none !important'
+        },
         paragraph: {
                 marginTop: 247,
                 marginBottom: 80
@@ -23,4 +29,13 @@ export const styles = () => createStyles({
         input: {
                 marginBottom: 13
         },
+        btn: {
+                textTransform: 'uppercase',
+                width: 350,
+                height: 55,
+                background: 'rgba(29, 32, 40, 0.9)',
+                fontSize: 19,
+                color: 'white',
+                fontWeight: 300
+        }
 })
