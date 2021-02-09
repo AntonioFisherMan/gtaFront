@@ -1,12 +1,14 @@
-import { Box, withStyles, Collapse } from '@material-ui/core'
 import React, { useState } from 'react'
+import { Box, withStyles, Collapse } from '@material-ui/core'
 import { Paragraph } from '../../common/typography/Paragraph/Paragraph'
 import { MyInput } from '../../components/Inputs/MyInput/MyInput'
 import { styles } from './styles'
 import { informItems } from '../../data/index'
-import { choosePanel } from '../../utils/choosePanel'
+
 import { CollapseItems } from '../../components/CollapseItems/CollapseItems'
 import { selectCollapseIndex } from '../../utils/selectCollapseIndex'
+import { choosePanel } from '../../utils/choosePanel'
+
 
 export const InformPage = withStyles(styles)(({ classes }) => {
         const [expanded, setExpanded] = useState(false)

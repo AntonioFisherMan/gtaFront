@@ -13,7 +13,7 @@ const InformWithStyles = InformUserStylesHOC(InformPage)
 const LoginWithStyles = FormStylesHOC(LoginPage)
 const RegisterWithStyles = FormStylesHOC(RegisterPage)
 const RecoverWithStyles = FormStylesHOC(RecoverPassPage)
-const BankWithStyles = InformUserStylesHOC(BankPage)
+
 
 
 
@@ -47,14 +47,14 @@ export const AppBarMenu = () => {
                                 <RecoverWithStyles />
                         </TabPanel>
                         <TabPanel value={value} index={4}>
-                                <BankWithStyles />
+                                <BankPage />
                         </TabPanel>
 
                 </>
         )
 }
 
-function TabPanel(props) {
+export function TabPanel(props) {
         const { children, value, index, ...other } = props;
 
         return (

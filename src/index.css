@@ -17,3 +17,9 @@ h6{
 .MuiIconButton-root{
         padding:0 !important;
 }
+.MuiTab-root{
+        padding: 0 !important;
+}
+.MuiTab-labelIcon .MuiTab-wrapper > *:first-child {
+         margin-bottom: 2px !important;
+    }

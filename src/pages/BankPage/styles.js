@@ -3,18 +3,28 @@ import { BorderBottom } from "@material-ui/icons";
 
 export const styles = () => createStyles({
         container: {
-                width: '450px',
+                display: 'flex',
+                minWidth: '1920px',
+
+        },
+        panel: {
+                width: '560px',
                 height: '1080px',
                 background: 'rgba(29, 32, 40, 0.75)',
-
                 position: 'relative'
+        },
+        content: {
+                height: '1080px',
+                width: '100%',
+                position: 'relative',
+                background: 'grey'
         },
         iconBlock: {
 
                 display: 'flex',
                 flexDirection: 'column',
                 alignItems: 'center',
-                marginTop: 33,
+                paddingTop: 33,
                 marginBottom: 64
         },
         textBlock: {

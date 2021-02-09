@@ -81,3 +81,9 @@ export const bankItems = [
         { id: 1, text: "ОПЛАТА ИМУЩЕСТВА" },
         { id: 2, text: "ПЕРЕВЕСТИ НА СЧЕТ " }
 ]
+export const prices = [
+        { id: 0, text: "1 000" },
+        { id: 1, text: "5 000" },
+        { id: 2, text: "10 000" },
+        { id: 3, text: "50 000" }
+]
