@@ -1,3 +1,5 @@
+import { HomeIcon, MonitorIcon } from '../assets/icons/icons'
+
 
 const characteristicsArr = [
         { text: "Стандарт" },
@@ -81,9 +83,29 @@ export const bankItems = [
         { id: 1, text: "ОПЛАТА ИМУЩЕСТВА" },
         { id: 2, text: "ПЕРЕВЕСТИ НА СЧЕТ " }
 ]
+
+
 export const prices = [
-        { id: 0, text: "1 000" },
-        { id: 1, text: "5 000" },
-        { id: 2, text: "10 000" },
-        { id: 3, text: "50 000" }
+        { id: 0, text: '1 000' },
+        { id: 1, text: '5 000' },
+        { id: 2, text: '10 000' },
+        { id: 3, text: '50 000' },
+]
+export const dates = [
+        { id: 0, text: '1 день' },
+        { id: 1, text: '3 дня' },
+        { id: 2, text: '7 дней' },
+        { id: 3, text: '14 дней' },
+]
+export const listOfProperty = [
+        { id: 0, icon: <HomeIcon />, text: "Дом", number: "№456", term: "30 д." },
+        { id: 1, icon: <HomeIcon />, text: "Дом", number: "№429", term: "1 д." },
+        { id: 2, icon: <HomeIcon />, text: "Дом", number: "№413", term: "10 д." },
+        { id: 3, icon: <HomeIcon />, text: "Дом", number: "№326", term: "20 д." },
+
+]
+
+export const listOfBusiness = [
+        { id: 0, icon: <MonitorIcon />, text: "Магазин", number: "№46", term: "30 д." },
+        { id: 1, icon: <MonitorIcon />, text: "Кофейня", number: "№16", term: "10 д." },
 ]

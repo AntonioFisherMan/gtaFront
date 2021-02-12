@@ -1,10 +1,10 @@
 import { createStyles } from "@material-ui/core";
 
 export const styles = () => createStyles({
-
         container: {
                 display: 'flex',
                 position: 'absolute',
+                alignItems: 'center',
                 bottom: 50,
                 left: 90
         },

@@ -4,6 +4,7 @@ export const styles = () => createStyles({
         container: {
                 display: 'flex',
                 justifyContent: 'space-between',
+                alignItems: "center"
 
         },
         btn: {

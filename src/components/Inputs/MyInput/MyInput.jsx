@@ -5,7 +5,7 @@ import LockOpenIcon from '@material-ui/icons/LockOpen';
 import { PasswordIcon } from '../../../assets/icons/icons'
 
 
-export const MyInput = withStyles(styles)(({ classes, icon, text, propsClasses, isPass }) => {
+export const MyInput = withStyles(styles)(({ classes, icon, text, propsClasses, isPass, onChange, type }) => {
         const [showPass, setShowPass] = useState(false)
 
         const handleShowPass = () => {
@@ -16,7 +16,7 @@ export const MyInput = withStyles(styles)(({ classes, icon, text, propsClasses, 
                 <TextField
                         InputLabelProps={{ classes: { root: classes.label } }}
                         color="primary"
-                        type={isPass ? showPass ? "text" : "password" : "text"}
+                        type={isPass ? showPass ? "text" : "password" : type}
                         label={text}
                         InputProps={{
                                 classes: { root: classes.input, formControl: propsClasses },
@@ -24,6 +24,7 @@ export const MyInput = withStyles(styles)(({ classes, icon, text, propsClasses, 
                                         <LockOpenIcon style={{ fontSize: '13px', color: "white" }} />
                                 </IconButton> : <IconButton onClick={handleShowPass} ><PasswordIcon style={{ fontSize: '13px' }} /></IconButton> : icon
                         }}
+                        onChange={onChange}
 
                 />
         )

@@ -22,4 +22,22 @@ h6{
 }
 .MuiTab-labelIcon .MuiTab-wrapper > *:first-child {
          margin-bottom: 2px !important;
+         display: flex;
+         justify-content: center;
+         align-items: center
+}
+    .MuiToggleButton-root{
+            padding: 0 !important;
+            border: none !important;
+            border-radius: 0 !important;
     }
+
+    input[type="number"]::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+      input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
