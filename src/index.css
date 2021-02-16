@@ -31,6 +31,11 @@ h6{
             border: none !important;
             border-radius: 0 !important;
     }
+    .MuiFilledInput-input{
+            padding:0 !important;
+    }
+
+
 
     input[type="number"]::-webkit-inner-spin-button {
         -webkit-appearance: none;

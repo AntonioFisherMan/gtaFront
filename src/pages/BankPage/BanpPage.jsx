@@ -48,7 +48,6 @@ export const BankPage = withStyles(styles)(({ classes }) => {
                         <Collapse in={expanded} className={classes.content}>
                                 {choosePanel(selectedIndex, handleClickItem, label)}
                         </Collapse>
-
                 </Box>
         )
 })

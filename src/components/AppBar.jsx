@@ -8,6 +8,7 @@ import { RecoverPassPage } from '../pages/forms/RecoverPassPage/RecoverPassPage'
 import { FormStylesHOC } from '../hoc/FormStylesHOC/FormStylesHOC'
 import { BankPage } from '../pages/BankPage/BanpPage'
 import { ThemeProviderHOC } from '../hoc/InformUserStylesHOC/ThemeProviderHOC';
+import { SliderPage } from '../pages/SliderPage/SliderPage'
 
 
 const InformWithStyles = InformUserStylesHOC(InformPage)
@@ -33,6 +34,7 @@ export const AppBarMenu = () => {
                                         <Tab label="Register" />
                                         <Tab label="Recover Pass" />
                                         <Tab label="Bank Page" />
+                                        <Tab label="Slider Page" />
                                 </Tabs>
                         </AppBar>
                         <TabPanel value={value} index={0} >
@@ -49,6 +51,9 @@ export const AppBarMenu = () => {
                         </TabPanel>
                         <TabPanel value={value} index={4}>
                                 <BankPageWithStyles />
+                        </TabPanel>
+                        <TabPanel value={value} index={5}>
+                                <SliderPage />
                         </TabPanel>
 
                 </>

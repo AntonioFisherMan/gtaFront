@@ -2,8 +2,8 @@ import React from 'react'
 import { Button, withStyles } from '@material-ui/core'
 import { styles } from './styles'
 
-export const FormButton = withStyles(styles)(({ text, variant, classes }) => {
+export const FormButton = withStyles(styles)(({ text, variant, classes, propsClasses, endIcon }) => {
         return (
-                <Button variant={variant ? variant : "contained"} className={classes.button}>{text}</Button>
+                <Button endIcon={endIcon ? endIcon : null} variant={variant ? variant : "contained"} className={propsClasses ? propsClasses : classes.button}>{text}</Button>
         )
 })
