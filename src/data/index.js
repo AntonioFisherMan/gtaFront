@@ -1,4 +1,4 @@
-import { HomeIcon, MonitorIcon } from '../assets/icons/icons'
+import { MonitorIcon, HomeIcon, CircleDownIcon, CircleUpIcon, QuestionIcon } from '../assets/icons/icons'
 
 
 const characteristicsArr = [
@@ -83,6 +83,10 @@ export const bankItems = [
         { id: 1, text: "ОПЛАТА ИМУЩЕСТВА" },
         { id: 2, text: "ПЕРЕВЕСТИ НА СЧЕТ " }
 ]
+export const adminItems = [
+        { id: 0, text: "АВТОРИЗАЦИЯ" },
+        { id: 1, text: "ПАНЕЛЬ АДМИНИСТРИРОВАНИЯ" },
+]
 
 
 export const prices = [
@@ -108,4 +112,42 @@ export const listOfProperty = [
 export const listOfBusiness = [
         { id: 0, icon: <MonitorIcon />, text: "Магазин", number: "№46", term: "30 д." },
         { id: 1, icon: <MonitorIcon />, text: "Кофейня", number: "№16", term: "10 д." },
+]
+
+export const tabs = [
+        { id: 0, text: "Пополнить счёт", icon: <CircleUpIcon style={{ marginRight: 15 }} /> },
+        { id: 1, text: "Снять со счёта", icon: <CircleDownIcon style={{ marginRight: 15 }} /> },
+        { id: 2, text: "Оплата недвижимости", icon: <HomeIcon style={{ marginRight: 15 }} /> },
+        { id: 3, text: "Оплата бизнеса", icon: <MonitorIcon style={{ marginRight: 15 }} /> },
+        { id: 4, text: "Перевести на счёт" }
+
+]
+export const tabsAdmin = [
+        { id: 0, text: "Авторизация", icon: <CircleUpIcon style={{ marginRight: 15 }} /> },
+        { id: 1, text: "Выход из админки", icon: <CircleDownIcon style={{ marginRight: 15 }} /> },
+        { id: 2, text: "Ответ на вопросы", icon: <QuestionIcon style={{ marginRight: 15 }} /> },
+        { id: 3, text: "Список игроков", icon: <MonitorIcon style={{ marginRight: 15 }} /> },
+        { id: 4, text: "Список администрации", icon: <MonitorIcon style={{ marginRight: 15 }} /> },
+        { id: 5, text: "Список лидеров организаций", icon: <MonitorIcon style={{ marginRight: 15 }} /> },
+]
+export const inputTexts = [
+        { id: 0, text: "Пополнить счёт в размере ", view: 0 },
+        { id: 1, text: "Снять сумму в размере ", view: 0 },
+        { id: 2, text: "Оплатить налог на ", view: 1 },
+        { id: 3, text: "Оплатить налог на ", view: 1 },
+        { id: 4, text: "Перевести на счёт ", view: 2 },
+]
+export const btnTexts = [
+        { id: 0, text: "Пополнить счёт" },
+        { id: 1, text: "Снять со счёта" },
+        { id: 2, text: "Оплатить недвижимость " },
+        { id: 3, text: "Оплатить бизнес" },
+        { id: 4, text: "Перевести на счёт" }
+]
+
+export const listOfQuestions = [
+        { id: 0, name: "Steve Oven", date: "80 cek", subtitle: "<1T8X>[500]" },
+        { id: 1, name: "Anton Art", date: "50 cek", subtitle: "<1T8X>[500]" },
+        { id: 2, name: "Vasia Val", date: "10 cek", subtitle: "<1T8X>[500]" },
+        { id: 3, name: "John None", date: "10 cek", subtitle: "<1T8X>[500]" }
 ]

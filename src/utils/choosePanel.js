@@ -1,34 +1,12 @@
 import { InformPanel } from '../components/InformPanels/InformPanel/InformPanel'
 import { CharacteristicsPanel } from '../components/InformPanels/CharacteristicsPanel/CharacteristicsPanel'
-import { characteristics, appearance, clothes } from '../data/index'
+import { characteristics, appearance, clothes, tabs, inputTexts, btnTexts, tabsAdmin } from '../data/index'
 import { ClothesPanel } from '../components/InformPanels/ClothesPanel/ClothesPanel'
 import { AccountPanel } from '../components/BankPanels/AccountPanel/AccountPanel'
-import { MonitorIcon, HomeIcon, CircleDownIcon, CircleUpIcon } from '../assets/icons/icons';
 import { prices, dates } from '../data/index'
+import { AuthPanel } from '../components/AdminPanels/AuthPanel/AuthPanel'
+import { AdminPanel } from '../components/AdminPanels/AdminPanel/AdminPanel'
 
-
-const tabs = [
-        { id: 0, text: "Пополнить счёт", icon: <CircleUpIcon style={{ marginRight: 15 }} /> },
-        { id: 1, text: "Снять со счёта", icon: <CircleDownIcon style={{ marginRight: 15 }} /> },
-        { id: 2, text: "Оплата недвижимости", icon: <HomeIcon style={{ marginRight: 15 }} /> },
-        { id: 3, text: "Оплата бизнеса", icon: <MonitorIcon style={{ marginRight: 15 }} /> },
-        { id: 4, text: "Перевести на счёт" }
-
-]
-const inputTexts = [
-        { id: 0, text: "Пополнить счёт в размере ", view: 0 },
-        { id: 1, text: "Снять сумму в размере ", view: 0 },
-        { id: 2, text: "Оплатить налог на ", view: 1 },
-        { id: 3, text: "Оплатить налог на ", view: 1 },
-        { id: 4, text: "Перевести на счёт ", view: 2 },
-]
-const btnTexts = [
-        { id: 0, text: "Пополнить счёт" },
-        { id: 1, text: "Снять со счёта" },
-        { id: 2, text: "Оплатить недвижимость " },
-        { id: 3, text: "Оплатить бизнес" },
-        { id: 4, text: "Перевести на счёт" }
-]
 
 
 export const choosePanel = (index, closePanel, label) => {
@@ -40,6 +18,13 @@ export const choosePanel = (index, closePanel, label) => {
                                 return <AccountPanel closePanel={closePanel} index={1} tabs={tabs.filter(i => i.id > 1)} isPriceIcon={false} data={dates} inputTexts={inputTexts.filter(i => i.id > 1 && i.id <= 3)} btnTexts={btnTexts.filter(i => i.id > 1 && i.id <= 3)} />
                         case 2:
                                 return <AccountPanel closePanel={closePanel} index={2} tabs={tabs.filter(i => i.id > 3)} inputTexts={inputTexts.filter(i => i.id === 4)} isShowAccountInput={true} isShowInput={true} btnTexts={btnTexts.filter(i => i.id === 4)} />
+                }
+        } else if (label === 'admin') {
+                switch (index) {
+                        case 0:
+                                return <AuthPanel closePanel={closePanel} index={0} tabs={tabsAdmin.filter(i => i.id <= 1)} />
+                        case 1:
+                                return <AdminPanel closePanel={closePanel} index={1} tabs={tabsAdmin.filter(i => i.id <= 5 && i.id > 1)} />
                 }
         } else {
                 switch (index) {
