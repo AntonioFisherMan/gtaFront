@@ -5,8 +5,7 @@ export const styles = () => createStyles({
         settingsBlock: {
                 width: '350px',
                 height: '1080px',
-                backgroundColor: 'rgba(29, 32, 40, 0.75)',
-                opacity: '0.5',
+                background: 'rgba(29, 32, 40, 0.7)',
                 paddingLeft: 54,
                 paddingRight: 54,
                 position: 'relative'

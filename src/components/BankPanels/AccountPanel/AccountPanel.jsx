@@ -38,7 +38,6 @@ export const AccountPanel = withStyles(styles)(({ classes, index, closePanel, ta
                                                 <AccountItem closePanel={closePanel}
                                                         data={data}
                                                         index={index}
-
                                                         inputTexts={inputTexts[1]}
                                                         isShowInput={tabs[1].id === 1 ? true : false}
                                                         isShowListObject={tabs[1].id === 3 ? true : false}

@@ -3,7 +3,7 @@ import { FormButton } from '../../components/Buttons/FormButton'
 import classNames from 'classnames'
 import { Headline } from '../../common/typography/Headline/Headline'
 import { MyInput } from '../../components/Inputs/MyInput/MyInput'
-import { styles } from '../../pages/forms/styles'
+import { styles } from '../../pages/Forms/styles'
 import { Box, withStyles } from '@material-ui/core'
 import { LinkButton } from '../Buttons/LinkButton'
 

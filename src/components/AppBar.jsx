@@ -2,9 +2,9 @@ import React, { useState } from 'react'
 import { AppBar, Tabs, Tab, Box, Typography, withStyles, createStyles } from '@material-ui/core'
 import { InformPage } from '../pages/InformPage/InformPage'
 import { InformUserStylesHOC } from '../hoc/InformUserStylesHOC/InformUserStylesHOC';
-import { LoginPage } from '../pages/forms/LoginPage/LoginPage';
-import { RegisterPage } from '../pages/forms/RegisterPage/RegisterPage';
-import { RecoverPassPage } from '../pages/forms/RecoverPassPage/RecoverPassPage';
+import { LoginPage } from '../pages/Forms/LoginPage/LoginPage';
+import { RegisterPage } from '../pages/Forms/RegisterPage/RegisterPage';
+import { RecoverPassPage } from '../pages/Forms/RecoverPassPage/RecoverPassPage';
 import { FormStylesHOC } from '../hoc/FormStylesHOC/FormStylesHOC'
 import { BankPage } from '../pages/BankPage/BanpPage'
 import { ThemeProviderHOC } from '../hoc/InformUserStylesHOC/ThemeProviderHOC';

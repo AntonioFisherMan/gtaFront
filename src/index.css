@@ -44,10 +44,6 @@ textarea
     .MuiFilledInput-input{
             padding:0 !important;
     }
-    .MuiTabs-flexContainer{
-            align-items: flex-start !important;
-    }
-
 
     input[type="number"]::-webkit-inner-spin-button {
         -webkit-appearance: none;
