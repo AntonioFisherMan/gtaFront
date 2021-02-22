@@ -151,3 +151,55 @@ export const listOfQuestions = [
         { id: 2, name: "Vasia Val", date: "10 cek", subtitle: "<1T8X>[500]" },
         { id: 3, name: "John None", date: "10 cek", subtitle: "<1T8X>[500]" }
 ]
+
+
+
+export const totalInform = {
+        headline: "Общая информация",
+        arrElem: [
+                { id: 0, headline: "1 LVL", text: "УРОВЕНЬ" },
+                { id: 1, headline: "1 из 3", text: "ОПЫТ(EXP)" },
+                { id: 2, headline: "МУЖСКОЙ ", text: "ПОЛ" },
+                { id: 3, headline: "НЕ ЖЕНАТ", text: "СЕМЕЙНОЕ ПОЛОЖЕНИЕ" },
+                { id: 4, headline: "ДОМ №336", text: "ИМУЩЕСТВО" },
+                { id: 5, headline: "LOS SANTOS POLICE DEPARTMENT", text: "ОРГАНИЗАЦИЯ" },
+                { id: 6, headline: "CHIEF OF POLICE(19)", text: "ДОЛЖНОСТЬ" },
+                { id: 7, headline: "PATROL DIVISION", text: "ПОДРАЗДЕЛЕНИЕ" },
+                { id: 8, headline: "ОТСУТСТВУЕТ", text: "РАБОТА" },
+                { id: 9, headline: "ТЮНИНГ-ЦЕНТР №3", text: "БИЗНЕС" },
+        ]
+}
+export const adminInform = {
+        headline: "Статистика по репорту",
+        arrElem: [
+                { id: 0, headline: "LSPD", text: "CHIEF OF POLICE(19)" },
+                { id: 1, headline: "ОРГАНИЗАЦИЯ", text: "ДОЛЖНОСТЬ" },
+        ]
+}
+export const statisticsInform = {
+        headline: "Статистика по наказаниям",
+        arrElem: [
+                { id: 0, headline: "100", text: "БЛОКИРОВОК ВСЕГО" },
+                { id: 1, headline: "20", text: "БЛОКИРОВОК ВСЕГО" },
+                { id: 2, headline: "100", text: "ПРЕДУПРЕЖДЕНИЙ ВСЕГО" },
+                { id: 3, headline: "40", text: "ПРЕДУПРЕЖДЕНИЙ ЗА СЕГОДНЯ" },
+        ]
+}
+
+
+
+export const commandData =
+
+        [
+                { id: 0, headline: "EXTRADITE EAT:" },
+                { id: 1, headline: "EXTRADITE HP:" },
+                { id: 2, headline: "EXTRADITE WATER" },
+                { id: 3, headline: "EXTRADITE WATER" },
+                { id: 4, headline: "EXTRADITE WATER" },
+                { id: 5, headline: "EXTRADITE WATER:" },
+                { id: 6, headline: "EXTRADITE WATER" },
+                { id: 7, headline: "EXTRADITE WATER" },
+                { id: 8, headline: "EXTRADITE WATER" },
+                { id: 9, headline: "EXTRADITE WATER" },
+        ]
+
